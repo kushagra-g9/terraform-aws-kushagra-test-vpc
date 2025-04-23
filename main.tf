@@ -15,6 +15,7 @@ module "vpc" {
     public_subnet-1 = {
       cidr_block = "10.0.0.0/24"
       az         = "eu-north-1a"
+       # Set this to true to make the subnet public (default is private)
       public     = true
     }
 
